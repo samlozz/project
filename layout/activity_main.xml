@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:id="@+id/header1"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text=""
+        android:textIsSelectable="false"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/header2"
+        android:textIsSelectable="false"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/header1"
+        app:layout_constraintTop_toTopOf="@id/header1" />
+
+    <TextView
+        android:id="@+id/header3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/header3"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/header2"
+        app:layout_constraintTop_toTopOf="@id/header1" />
+
+    <TextView
+        android:id="@+id/header4"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/header4"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/header3"
+        app:layout_constraintTop_toTopOf="@id/header1" />
+
+    <TextView
+        android:id="@+id/header5"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/header5"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/header4"
+        app:layout_constraintTop_toTopOf="@id/header1" />
+
+    <TextView
+        android:id="@+id/header6"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/header6"
+        android:textAlignment="center"
+        android:textSize="12dp"
+        app:layout_constraintLeft_toRightOf="@id/header5"
+        app:layout_constraintTop_toTopOf="@id/header1" />
+
+    <TextView
+        android:id="@+id/player_one_name"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:gravity="end|center_vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/player_one_name_label"
+        android:textIsSelectable="false"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header1" />
+
+    <TextView
+        android:id="@+id/player_two_name"
+        android:layout_width="115dp"
+        android:layout_height="55dp"
+        android:gravity="end|center_vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/player_two_name_label"
+        android:textIsSelectable="false"
+        android:textSize="15sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_one_name" />
+
+    <TextView
+        android:id="@+id/player_one_current_throw"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/_no_score"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/player_one_name"
+        app:layout_constraintTop_toTopOf="@id/player_one_name" />
+
+    <TextView
+        android:id="@+id/player_two_current_throw"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/_no_score"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/player_two_name"
+        app:layout_constraintTop_toTopOf="@id/player_two_name" />
+
+    <TextView
+        android:id="@+id/player_one_current_throw_2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/_no_score"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/player_one_current_throw"
+        app:layout_constraintTop_toTopOf="@id/player_one_name" />
+
+    <TextView
+        android:id="@+id/player_two_current_throw_2"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/_no_score"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/player_two_current_throw"
+        app:layout_constraintTop_toTopOf="@id/player_two_name" />
+
+    <TextView
+        android:id="@+id/player_one_current_throw_3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/_no_score"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/player_one_current_throw_2"
+        app:layout_constraintTop_toTopOf="@id/player_one_name" />
+
+    <TextView
+        android:id="@+id/player_two_current_throw_3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/_no_score"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintLeft_toRightOf="@id/player_two_current_throw_2"
+        app:layout_constraintTop_toTopOf="@id/player_two_name" />
+
+    <TextView
+        android:id="@+id/player_one_throw_total"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/_no_score"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textIsSelectable="false"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/player_one_current_throw_3"
+        app:layout_constraintTop_toTopOf="@id/player_one_name" />
+
+    <TextView
+        android:id="@+id/player_two_throw_total"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/_no_score"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textIsSelectable="false"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/player_two_current_throw_3"
+        app:layout_constraintTop_toTopOf="@id/player_two_name" />
+
+    <TextView
+        android:id="@+id/player_one_current_score"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/player_one_current_score"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textIsSelectable="false"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/player_one_throw_total"
+        app:layout_constraintTop_toTopOf="@id/player_one_name" />
+
+    <TextView
+        android:id="@+id/player_two_current_score"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:text="@string/player_one_current_score"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textIsSelectable="false"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/player_two_throw_total"
+        app:layout_constraintTop_toTopOf="@id/player_two_name" />
+
+    <TextView
+        android:id="@+id/separator_line"
+        android:layout_width="465dp"
+        android:layout_height="5dp"
+        android:background="#EA80FC"
+        android:backgroundTint="#817E7D"
+        android:clickable="false"
+        android:text=""
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player_two_name" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="@string/_1"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/player_one_name"
+        app:layout_constraintTop_toBottomOf="@id/separator_line" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_2"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toRightOf="@id/button1"
+        app:layout_constraintTop_toTopOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_3"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toRightOf="@id/button2"
+        app:layout_constraintTop_toTopOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_4"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toRightOf="@id/button3"
+        app:layout_constraintTop_toTopOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_5"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toRightOf="@id/button4"
+        app:layout_constraintTop_toTopOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="@string/_6"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/player_two_name"
+        app:layout_constraintTop_toBottomOf="@id/button1" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_7"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button2"
+        app:layout_constraintTop_toTopOf="@id/button6" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_8"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button3"
+        app:layout_constraintTop_toTopOf="@id/button6" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_9"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button4"
+        app:layout_constraintTop_toTopOf="@id/button6" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_10"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button5"
+        app:layout_constraintTop_toTopOf="@id/button6" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="@string/_11"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/player_two_name"
+        app:layout_constraintTop_toBottomOf="@id/button6" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_12"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button7"
+        app:layout_constraintTop_toTopOf="@id/button11" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_13"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button8"
+        app:layout_constraintTop_toTopOf="@id/button11" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_14"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button9"
+        app:layout_constraintTop_toTopOf="@id/button11" />
+
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_15"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button10"
+        app:layout_constraintTop_toTopOf="@id/button11" />
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="@string/_16"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/player_two_name"
+        app:layout_constraintTop_toBottomOf="@id/button11" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_17"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button12"
+        app:layout_constraintTop_toTopOf="@id/button16" />
+
+    <Button
+        android:id="@+id/button18"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_18"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button13"
+        app:layout_constraintTop_toTopOf="@id/button16" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_19"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button14"
+        app:layout_constraintTop_toTopOf="@id/button16" />
+
+    <Button
+        android:id="@+id/button20"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:text="@string/_20"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button15"
+        app:layout_constraintTop_toTopOf="@id/button16" />
+
+
+    <Button
+        android:id="@+id/button_no_score"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/_no_score"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/player_two_name"
+        app:layout_constraintTop_toBottomOf="@id/button16" />
+
+    <Button
+        android:id="@+id/button25"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="@string/_25"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button17"
+        app:layout_constraintTop_toTopOf="@id/button_no_score" />
+
+    <Button
+        android:id="@+id/button50"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="@string/_50"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button18"
+        app:layout_constraintTop_toTopOf="@id/button_no_score" />
+
+    <Switch
+        android:id="@+id/switch_double"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:minHeight="48sp"
+        android:text="@string/_double"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button19"
+        app:layout_constraintTop_toTopOf="@id/button_no_score" />
+
+    <Switch
+        android:id="@+id/switch_treble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:minHeight="48sp"
+        android:text="@string/_treble"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/button20"
+        app:layout_constraintTop_toTopOf="@id/button_no_score" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/undo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toTopOf="@id/save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
